@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/normalise.css" />
+  </head>
+  <body>
+    
+    <div class="main__container">
+      <p class="title">Expense Tracker</p>
+      <div class="container">
+        <p>Your balance</p>
+        <h2 id="balance">$0.00</h2>
+
+        <div class="inc-exp-container">
+          <div class="money">
+            <p class="inc-exp">INCOME</p>
+            <p id="money-plus" class="money-plus">+$0.00</p>
+          </div>
+          <div class="money">
+            <p class="inc-exp">EXPENSES</p>
+            <p id="money-minus" class="money-minus">+$0.00</p>
+          </div>
+        </div>
+      </div>
+      <h3 class="history">History</h3>
+      <ul id="list" class="list">
+        <li class="minus">
+          cash <span>-$500</span><button class="delete-btn">x</button>
+        </li>
+        <li class="plus">
+          Salary <span>$300</span><button class="delete-btn">x</button>
+        </li>
+      </ul>
+      <h3>Add New Transaction</h3>
+      <form action="#" id="form">
+        <div class="form-control">
+          <label for="transaction">Transaction</label>
+          <input
+            type="transaction"
+            id="transaction"
+            placeholder="Ex. Rent"
+          />
+        </div>
+        <div class="form-control">
+          <label for="amount">
+            Amount
+          </label>
+          <input type="number" id="amount" placeholder="Enter ' - ' for expense,  Ex. -10000"/>
+        </div>
+        <button class="btn" type="submit">Add Transaction</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
